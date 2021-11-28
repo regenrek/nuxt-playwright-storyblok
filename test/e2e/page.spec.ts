@@ -1,10 +1,9 @@
 import { resolve, join } from 'path'
 import { test, expect } from '@playwright/test'
 
-const ROOT_PATH = resolve(__dirname, 'screenshots')
-// const ROOT_URL = 'http://localhost:3000'
+const ROOT_PATH = resolve(__dirname, '..', 'screenshots')
 
-test('testing index with title', async ({ page, baseURL }) => {
+test('job board test', async ({ page, baseURL }) => {
   await page.goto(baseURL + '/')
 
   // Step 1 - Is Homepage working
